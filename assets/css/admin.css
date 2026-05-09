@@ -1,0 +1,136 @@
+/* --- RESET & BASE --- */
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Arial', sans-serif; }
+
+/* Balikin warna kalemnya biar gak silau */
+body { background-color: #f8fafc; color: #333; }
+
+/* --- NAVBAR FIX --- */
+nav { 
+    background: #1e293b; 
+    color: white; 
+    padding: 15px 0; 
+    min-height: 70px; /* Biar navbar punya tinggi tetap walau menu kosong */
+    display: flex;
+    align-items: center;
+}
+
+.nav-container { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    width: 100%; 
+    max-width: 1100px; 
+    margin: 0 auto; 
+    padding: 0 25px; 
+}
+
+.logo { font-weight: bold; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px; }
+.logo .red { color: #e11d48; }
+.logo .blue { color: #ffffff; }
+
+/* --- ADMIN LAYOUT --- */
+.admin-wrapper { 
+    display: flex; 
+    justify-content: center; 
+    padding: 60px 20px; 
+}
+
+.admin-container { 
+    background: white; 
+    padding: 40px; 
+    border-radius: 16px; 
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05); 
+    width: 100%; 
+    max-width: 550px; 
+}
+
+h2 { 
+    font-size: 1.6rem; 
+    margin-bottom: 30px; 
+    padding-bottom: 10px;
+    border-bottom: 3px solid #e11d48; 
+    display: inline-block;
+    color: #1e293b;
+}
+
+/* --- FORM STYLING --- */
+.form-group { margin-bottom: 20px; }
+
+label { 
+    display: block; 
+    font-weight: bold; 
+    color: #475569; 
+    margin-bottom: 8px; 
+    font-size: 0.9rem;
+}
+
+input, select { 
+    width: 100%; 
+    padding: 14px 16px; 
+    border: 1px solid #e2e8f0; 
+    border-radius: 10px; 
+    font-size: 1rem;
+    background-color: #ffffff;
+    transition: 0.3s;
+    color: #1e293b;
+}
+
+/* Fokus biar keren */
+input:focus, select:focus { 
+    outline: none;
+    border-color: #e11d48; 
+    box-shadow: 0 0 0 4px rgba(225, 29, 72, 0.1); 
+}
+
+/* Nomor WA yang dikunci */
+input:disabled { 
+    background-color: #f1f5f9; 
+    color: #94a3b8; 
+    cursor: not-allowed; 
+    border-style: dashed;
+}
+
+/* --- INPUT KATEGORI LAINNYA --- */
+#p-category-other {
+    margin-top: 12px;
+    border-color: #e11d48;
+    background-color: #fffafb;
+    display: none; /* Default sembunyi */
+    animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* --- BUTTON --- */
+.btn-add { 
+    background: #e11d48; 
+    color: white; 
+    border: none; 
+    padding: 16px; 
+    width: 100%; 
+    border-radius: 10px; 
+    font-weight: bold; 
+    font-size: 1rem;
+    cursor: pointer; 
+    margin-top: 10px;
+    transition: transform 0.2s, background 0.3s;
+}
+
+.btn-add:hover { 
+    background: #be123c; 
+    transform: translateY(-2px);
+}
+
+.back-link { 
+    display: block; 
+    text-align: center; 
+    margin-top: 25px; 
+    color: #64748b; 
+    text-decoration: none; 
+    font-size: 0.9rem; 
+}
+
+.back-link:hover { color: #1e293b; text-decoration: underline; }

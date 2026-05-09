@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel | PT. Khalf Global Teknik</title>
+    <link rel="stylesheet" href="assets/css/admin.css">
+    <link rel="icon" type="image/png" href="https://www.image2url.com/r2/default/images/1778163706889-ca01a978-96b5-424a-9f95-a7625ea63152.png">
+</head>
+<body>
+    <!-- Navbar dengan Menu Kosong -->
+    <nav>
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="index.html" style="text-decoration: none; color: inherit;">
+                    <span class="red">KHALF</span> <span class="blue">GLOBAL TEKNIK</span>
+                </a>
+            </div>
+            
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+
+            <!-- List Menu Dikosongkan Sesuai Request -->
+            <ul class="nav-list"></ul>
+        </div>
+    </nav>
+
+    <div class="admin-wrapper">
+        <div class="admin-container">
+            <h2>Tambah Produk Baru</h2>
+            <form id="add-product-form">
+                <div class="form-group">
+                    <label>Nama Produk</label>
+                    <input type="text" id="p-name" placeholder="Contoh: PCD Insert" required>
+                </div>
+               <div class="form-group">
+    <label>Kategori</label>
+    <!-- Tambahkan onchange untuk deteksi pilihan -->
+    <select id="p-category" onchange="checkCategory(this)">
+        <option value="Cutting Tools">Cutting Tools</option>
+        <option value="Chemical Industri">Chemical Industri</option>
+        <option value="Apparel & Safety">Apparel & Safety</option>
+        <option value="Machining Tools">Machining Tools</option>
+        <option value="Other">Lainnya (Isi sendiri)</option>
+    </select>
+    
+    <!-- Input tambahan yang muncul cuma kalau pilih "Other" -->
+    <input type="text" id="p-category-other" placeholder="Masukkan kategori baru..." 
+           style="margin-top: 10px; display: none;">
+</div>
+                <div class="form-group">
+                    <label>Brand</label>
+                    <input type="text" id="p-brand" placeholder="Contoh: KGT Special Tools" required>
+                </div>
+                <div class="form-group">
+                    <label>URL Gambar</label>
+                    <input type="text" id="p-image" placeholder="https://images.unsplash.com/..." required>
+                </div>
+                <div class="form-group">
+                    <label>Nomor WhatsApp Tujuan</label>
+                    <input type="text" id="p-wa" value="628123456789" disabled>
+                </div>
+                <button type="submit" class="btn-add">Tambah ke Katalog</button>
+            </form>
+            <a href="index.html" class="back-link">← Kembali ke Beranda</a>
+        </div>
+    </div>
+
+    
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

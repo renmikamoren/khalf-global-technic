@@ -1159,7 +1159,7 @@
         category: "Machining Tools",
         brand: "AUTOMA",
         images: [
-            "http://www.tamphattst.com/sites/default/files/styles/large/public/field/image/van-chu-y-dieu-khien-bang-khi-nen_0.jpg?itok=aykhrtWv"
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRA0O-Itpsh_ltM5h_Mb6nkmbywxOt7TvxXyg&s"
         ],
         description: "Y-Type valve pneumatik untuk pengaturan aliran otomatis pada sistem industri.",
         specs: {

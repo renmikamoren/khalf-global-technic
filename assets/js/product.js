@@ -1599,7 +1599,7 @@
         category: "Industrial Tools",
         brand: "Industrial Grade",
         images: [
-            "https://images.unsplash.com/photo-1565452344518-47fafa7e3c3d?w=800"
+            "https://www.image2url.com/r2/default/images/1778931511597-6568a29f-d80a-453d-9f8c-24de0922627d.jpeg"
         ],
         description: "Sikat kawat industri ukuran 12mm dengan shaft 6mm untuk pembersihan karat, polishing, dan finishing permukaan logam.",
         specs: {

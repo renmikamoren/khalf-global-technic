@@ -1591,6 +1591,22 @@
             "Material": "Nitrile Rubber",
             "Feature": "Industrial Safety"
         }
+    },
+
+    {
+        d: 99,
+        name: "Industrial Wire Brush 10mm, 12mm, 16mm, 20mm, 30mm",
+        category: "Industrial Tools",
+        brand: "Industrial Grade",
+        images: [
+            "https://images.unsplash.com/photo-1565452344518-47fafa7e3c3d?w=800"
+        ],
+        description: "Sikat kawat industri ukuran 12mm dengan shaft 6mm untuk pembersihan karat, polishing, dan finishing permukaan logam.",
+        specs: {
+            "Brush Diameter": "12mm",
+            "Shaft Diameter": "6mm",
+            "Brush Length": "30mm"
+        }
     }
 
 ];
